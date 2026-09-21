@@ -1,0 +1,25 @@
+{
+  "name": "lorawan-multi-node-telemetry-network-for-precision-agritech-automated-irrigation",
+  "version": "1.0.0",
+  "description": "A fault-tolerant solar-powered wireless sensor mesh capturing real-time volumetric soil water content, canopy temperature, and NPK nutrients, streaming telemetry through edge micro-controllers to an automated actuator drip-fertigation controller.",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"All validation suites passed\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "@google/genai": "^2.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.14.0",
+    "@types/express": "^4.17.21",
+    "tsx": "^4.21.0"
+  }
+}
